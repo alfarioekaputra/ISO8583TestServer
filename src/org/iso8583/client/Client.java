@@ -59,9 +59,9 @@ public class Client {
             isoMsg.set(15,"0901");
             isoMsg.set(18,"6017");
             isoMsg.set(32,"111");
-            isoMsg.set(41,"00110197");
+            isoMsg.set(41,"0011019700000000");
             isoMsg.set(42,"114209000101900");
-            isoMsg.set(48,"216205273");
+            isoMsg.set(48,"10131608000002");
             printISOMessage(isoMsg);
 
             byte[] result = isoMsg.pack();

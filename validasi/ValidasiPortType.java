@@ -1,5 +1,5 @@
 
-package verifikasilist;
+package validasi;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -14,22 +14,22 @@ import javax.jws.soap.SOAPBinding;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "verifikasilistPortType", targetNamespace = "urn:verifikasilist")
+@WebService(name = "validasiPortType", targetNamespace = "urn:validasi")
 @SOAPBinding(style = SOAPBinding.Style.RPC)
-public interface VerifikasilistPortType {
+public interface ValidasiPortType {
 
 
     /**
-     * Get a listing of verifikasi
+     * validasidata
      * 
-     * @param kodeBayar
+     * @param id
      * @return
      *     returns java.lang.String
      */
-    @WebMethod(operationName = "ISOMessage", action = "urn:ISOMessagelist#ISOMessage")
+    @WebMethod(action = "urn:validasi#getData")
     @WebResult(partName = "return")
-    public String isoMessage(
-        @WebParam(name = "kode_bayar", partName = "kode_bayar")
-        String kodeBayar);
+    public String getData(
+        @WebParam(name = "id", partName = "id")
+        String id);
 
 }
