@@ -23,3 +23,4 @@ nbproject
 # Mac DS_Store Files
 .DS_Store
 
+/bin/
