@@ -14,3 +14,7 @@
 2016-09-11 16:07:30,161 [main] INFO (connectionHandler.java:49) ­ Data From Client : 0200203A400100C1000037000000304708344409010901601703111001101970000000011420900010190001410131608000002
 
 2016-09-11 16:48:53,226 [main] INFO (mockServer.java:36) ­ Server is waiting for client on port 5010
+2016-09-11 22:59:00,949 [main] INFO (mockServer.java:36) ­ Server is waiting for client on port 5010
+2016-09-11 22:59:08,632 [main] INFO (connectionHandler.java:47) ­ There is a client connected
+2016-09-11 22:59:08,695 [main] INFO (connectionHandler.java:49) ­ Data From Client : 0200203A400100C1000037000000304708344409010901601703111001101970000000011420900010190001410131608000002
+

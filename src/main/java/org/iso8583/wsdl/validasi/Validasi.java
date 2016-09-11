@@ -1,5 +1,5 @@
 
-package validasi;
+package org.iso8583.wsdl.validasi;
 
 import java.net.MalformedURLException;
 import java.net.URL;

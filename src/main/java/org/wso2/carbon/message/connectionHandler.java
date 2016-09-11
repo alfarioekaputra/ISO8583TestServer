@@ -24,7 +24,7 @@ import org.apache.log4j.Logger;
 import org.jpos.iso.ISOException;
 import org.jpos.iso.ISOMsg;
 import org.jpos.iso.packager.GenericPackager;
-import validasi.Validasi;
+import org.iso8583.wsdl.validasi.Validasi;
 
 public class connectionHandler {
     private Logger log = Logger.getLogger(getClass());

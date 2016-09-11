@@ -1,5 +1,5 @@
 
-package validasi;
+package org.iso8583.wsdl.validasi;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
