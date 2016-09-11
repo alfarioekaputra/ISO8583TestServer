@@ -24,6 +24,8 @@ import org.apache.log4j.Logger;
 import org.jpos.iso.ISOException;
 import org.jpos.iso.ISOMsg;
 import org.jpos.iso.packager.GenericPackager;
+import verifikasilist.Verifikasilist;
+import verifikasilist.VerifikasilistPortType;
 
 public class connectionHandler {
 	private Logger log = Logger.getLogger(getClass());
@@ -75,8 +77,26 @@ public class connectionHandler {
 		ISOMsg isoMsg = new ISOMsg();
 		isoMsg.setPackager(packager);
 		isoMsg.unpack(message.getBytes());
-		isoMsg.setMTI("0210");
-		isoMsg.set("39", "00");
+                
+                System.out.println(isoMsg.getString(48));
+                
+		//if (isoMsg.getMTI().equalsIgnoreCase("0200")) {
+			
+                  //  Verifikasilist verifikasi = new Verifikasilist();
+                  //  String hello = verifikasi.getVerifikasilistPort().isoMessage("1");
+                   // System.out.println(verifikasi.getVerifikasilistPort().isoMessage("1"));
+                    
+                    isoMsg.setMTI("0210");
+                    isoMsg.set("39", "00");
+                    //isoMsg.set("48", isoMsg.getMaxField());
+                    //isoMsg.unset("105");
+                   // isoMsg.set("111", verifikasi.getVerifikasilistPort().isoMessage("1"));
+		//}else if(isoMsg.getMTI().equalsIgnoreCase("0100")){
+                  //  isoMsg.setMTI("0110");
+                   // isoMsg.set("39", "00");
+                    //isoMsg.unset("105");
+                    //isoMsg.set("111", verifikasi.getVerifikasilistPort().isoMessage("1"));
+                //}
 		byte[] msg = isoMsg.pack();
 		String packedMessage = new String(msg).toUpperCase();
 		isoMsg.dump(System.out, "");
@@ -101,7 +121,7 @@ public class connectionHandler {
 	public  Properties getISO8583Properties(){
 		Properties prop = new Properties();
 		try{
-			FileInputStream input=new FileInputStream("iso87asciiProperties.xml");
+			FileInputStream input=new FileInputStream("iso87ascii.xml");
 			prop.loadFromXML(input);
 			input.close();
 		}

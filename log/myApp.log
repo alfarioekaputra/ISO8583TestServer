@@ -1,4 +1,0 @@
-2016-03-01 14:04:43,000 [main] INFO (mockServer.java:23) ­ Server is waiting for client on port 5010
-2016-03-01 14:04:48,240 [main] INFO (connectionHandler.java:32) ­ There is a client connected
-2016-03-01 14:04:48,240 [main] INFO (connectionHandler.java:39) ­ Data From Client : 0200B2200000001000000000000000800000568893000000020000011056328045689305DFGHT021ABCDEFGHIJ 9871236548
-

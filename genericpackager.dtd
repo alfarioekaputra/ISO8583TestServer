@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <!ELEMENT isopackager (isofield+,isofieldpackager*)*>
 <!ATTLIST isopackager maxValidField CDATA        #IMPLIED>
 <!ATTLIST isopackager bitmapField   CDATA        #IMPLIED>
@@ -29,3 +30,4 @@
 <!ATTLIST isofieldpackager bitmapField CDATA        #IMPLIED>
 <!ATTLIST isofieldpackager firstField  CDATA        #IMPLIED>
 <!ATTLIST isofieldpackager headerLength  CDATA        #IMPLIED>
+
