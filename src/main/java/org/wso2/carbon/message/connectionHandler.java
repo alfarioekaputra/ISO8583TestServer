@@ -21,10 +21,10 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.Properties;
 import org.apache.log4j.Logger;
+import org.iso8583.wsdl.validasi.Validasi;
 import org.jpos.iso.ISOException;
 import org.jpos.iso.ISOMsg;
 import org.jpos.iso.packager.GenericPackager;
-import org.iso8583.wsdl.validasi.Validasi;
 
 public class connectionHandler {
     private Logger log = Logger.getLogger(getClass());
@@ -79,8 +79,11 @@ public class connectionHandler {
 
         if (isoMsg.getMTI().equalsIgnoreCase("0200")) {
 
+            //Validasi verifikasi = new Validasi();
             Validasi verifikasi = new Validasi();
-            String verifikasiws = verifikasi.getValidasiPort().getData(isoMsg.getString(48));
+            
+            String verifikasiws;
+            verifikasiws = verifikasi.getValidasiHttpSoap11Endpoint().getData(isoMsg.getString(48));
 
             isoMsg.setMTI("0210");
             isoMsg.set("39", "00");

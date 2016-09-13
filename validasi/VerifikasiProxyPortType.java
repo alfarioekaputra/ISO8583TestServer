@@ -1,5 +1,5 @@
 
-package org.iso8583.wsdl.validasi;
+package validasi;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -16,11 +16,11 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "validasiPortType", targetNamespace = "urn:validasi")
+@WebService(name = "verifikasiProxyPortType", targetNamespace = "urn:validasi")
 @XmlSeeAlso({
     ObjectFactory.class
 })
-public interface ValidasiPortType {
+public interface VerifikasiProxyPortType {
 
 
     /**
