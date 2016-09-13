@@ -24,3 +24,6 @@ nbproject
 .DS_Store
 
 /bin/
+
+.project
+.settings/
